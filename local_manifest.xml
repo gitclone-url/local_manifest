@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  
+  <remote name="gitclone-url" fetch="https://github.com/gitclone-url" />
+  <remote name="sm4450" fetch="https://github.com/sm4450-development" />
+  <remote name="clang" fetch="https://dev.azure.com/ozipoetra120/test/_git" />
+
+ <!-- Device Tree -->
+  <project path="device/xiaomi/sky" name="android_device_xiaomi_sky" remote="gitclone-url" revision="Derp-13"/>
+  
+ <!-- Kernel Tree-->
+  <project path="xiaomi/sky/kernel" name="device_xiaomi_sky-kernel" remote="sm4450" revision="tm"/>
+  
+ <!-- OSS vendor Tree--> 
+  <project path="vendor/xiaomi/sky" name="vendor_xiaomi_sky" remote="sm4450" revision="topaz"/>
+  
+ <!-- Clang -->
+  <project path="prebuilts/clang/host/linux-x86/clang-r487747c" name="clang-r487747c" remote="clang" revision="main" clone-depth="1"/>
+
+</manifest>
